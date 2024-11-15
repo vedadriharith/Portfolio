@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { FaLinkedin, FaGithub } from "react-icons/fa"; // Import LinkedIn and GitHub icons
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -65,9 +66,7 @@ const Contact = () => {
   };
 
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
+    <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
@@ -121,6 +120,31 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+
+        {/* LinkedIn and GitHub Redirect Buttons */}
+        <div className='mt-8 flex gap-4'>
+          {/* LinkedIn Button */}
+          <a
+            href="https://www.linkedin.com/in/vedadriharith/" // Your LinkedIn profile URL
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-blue-600 py-3 px-6 rounded-xl text-white font-bold hover:bg-blue-700 transition"
+          >
+            <FaLinkedin size={20} />
+            LinkedIn
+          </a>
+
+          {/* GitHub Button */}
+          <a
+            href="https://github.com/vedadriharith" // Your GitHub profile URL
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-gray-800 py-3 px-6 rounded-xl text-white font-bold hover:bg-gray-900 transition"
+          >
+            <FaGithub size={20} />
+            GitHub
+          </a>
+        </div>
       </motion.div>
 
       <motion.div
