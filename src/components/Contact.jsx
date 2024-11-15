@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { FaLinkedin, FaGithub } from "react-icons/fa"; // Import LinkedIn and GitHub icons
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -119,32 +119,30 @@ const Contact = () => {
           >
             {loading ? "Sending..." : "Send"}
           </button>
+          <div className='mt-8 flex gap-4'>
+            {/* LinkedIn Button */}
+            <a
+              href="https://www.linkedin.com/in/vedadriharith/" // Your LinkedIn profile URL
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-blue-600 py-3 px-6 rounded-xl text-white font-bold hover:bg-blue-700 transition"
+            >
+              <FaLinkedin size={20} />
+              LinkedIn
+            </a>
+
+            {/* GitHub Button */}
+            <a
+              href="https://github.com/vedadriharith" // Your GitHub profile URL
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-gray-800 py-3 px-6 rounded-xl text-white font-bold hover:bg-gray-900 transition"
+            >
+              <FaGithub size={20} />
+              GitHub
+            </a>
+          </div>
         </form>
-
-        {/* LinkedIn and GitHub Redirect Buttons */}
-        <div className='mt-8 flex gap-4'>
-          {/* LinkedIn Button */}
-          <a
-            href="https://www.linkedin.com/in/vedadriharith/" // Your LinkedIn profile URL
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-blue-600 py-3 px-6 rounded-xl text-white font-bold hover:bg-blue-700 transition"
-          >
-            <FaLinkedin size={20} />
-            LinkedIn
-          </a>
-
-          {/* GitHub Button */}
-          <a
-            href="https://github.com/vedadriharith" // Your GitHub profile URL
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-gray-800 py-3 px-6 rounded-xl text-white font-bold hover:bg-gray-900 transition"
-          >
-            <FaGithub size={20} />
-            GitHub
-          </a>
-        </div>
       </motion.div>
 
       <motion.div
