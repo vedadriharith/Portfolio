@@ -19,6 +19,7 @@ import {
   sklearn,
   spam,
   coffee,
+  medgraph,
 } from "../assets";
 
 export const navLinks = [
@@ -107,6 +108,27 @@ const technologies = [
 ];
 
 const projects = [
+  {
+    name: "MedGraph AI", // <--- NEW PROJECT START
+    description:
+      "A high-end clinical decision support system utilizing Hybrid Graph-RAG architecture. It combines Vector Search (ChromaDB) with Knowledge Graphs (Neo4j) to eliminate AI hallucinations and provide visual reasoning for complex medical queries like drug interactions.",
+    tags: [
+      {
+        name: "GraphRAG",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Neo4j",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Llama 3.3",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: medgraph,
+    source_code_link: "https://github.com/vedadriharith/MedGraph",
+  },
   {
     name: "Cold Email Generator",
     description:

@@ -23,6 +23,7 @@ import powerbi from "./tech/powerbi.png";
 import coldmail from "./coldmail.png";
 import spam from "./spam.png";
 import coffee from "./coffee.png";
+import medgraph from "./medgraph.png";
 
 export {
   logo,
@@ -48,4 +49,5 @@ export {
   coldmail,
   spam,
   coffee,
+  medgraph,
 };
