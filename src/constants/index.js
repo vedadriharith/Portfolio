@@ -20,6 +20,7 @@ import {
   spam,
   coffee,
   medgraph,
+  agri_voltaic_result
 } from "../assets";
 
 export const navLinks = [
@@ -108,6 +109,28 @@ const technologies = [
 ];
 
 const projects = [
+  {
+    name: "Agri-Voltaic Optimization Agent", // <--- NEW PROJECT
+    description:
+      "A Reinforcement Learning agent that optimizes solar panel tilt angles in dual-use farms. It uses Proximal Policy Optimization (PPO) to dynamically balance maximizing electricity revenue with maintaining optimal crop health patterns, achieving 95% sun-tracking efficiency.",
+    tags: [
+      {
+        name: "Reinforcement Learning",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Stable Baselines3",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: agri_voltaic_result,
+    source_code_link: "https://github.com/vedadriharith/Agri-Voltaic-Optimization-Agent",
+  },
+
   {
     name: "MedGraph AI", // <--- NEW PROJECT START
     description:

@@ -24,6 +24,7 @@ import coldmail from "./coldmail.png";
 import spam from "./spam.png";
 import coffee from "./coffee.png";
 import medgraph from "./medgraph.png";
+import agri_voltaic_result from "./agri_voltaic_result.png";
 
 export {
   logo,
@@ -50,4 +51,5 @@ export {
   spam,
   coffee,
   medgraph,
+  agri_voltaic_result,
 };
